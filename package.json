@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@babel/preset-typescript": "^7.26.0",
+    "chrome-types": "^0.1.316"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@tsconfig/recommended": "^1.0.8",
+    "typescript": "^5.6.3"
+  },
+  "scripts" : {
+    "start" : "node_modules\\.bin\\babel scripts\\background scripts\\content --out-dir dist --extensions \".ts\""
+  }
+}

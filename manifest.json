@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Nomadix Helper",
+    "version": "1.0",
+    "description": "Adds functionality to Nomadix web interfaces",
+    "content_scripts": [
+        {
+            "run_at": "document_end",
+            "js":["dist/content.js"],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "dist/background.js",
+        "type": "module"
+    }
+  }
